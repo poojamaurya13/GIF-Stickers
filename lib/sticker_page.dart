@@ -2,21 +2,21 @@
 
 import 'package:flutter/material.dart';
 
-class All_GIF_Page extends StatefulWidget {
-  const All_GIF_Page({Key? key}) : super(key: key);
+class All_Sticker_Page extends StatefulWidget {
+  const All_Sticker_Page({Key? key}) : super(key: key);
 
   @override
-  State<All_GIF_Page> createState() => _All_GIF_PageState();
+  State<All_Sticker_Page> createState() => _All_Sticker_PageState();
 }
 
-class _All_GIF_PageState extends State<All_GIF_Page> {
+class _All_Sticker_PageState extends State<All_Sticker_Page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(216, 148, 8, 57),
         title: const Text(
-          "All GIFs",
+          "All Stickers",
           style: TextStyle(fontFamily: "Merriweather", fontSize: 16),
         ),
       ),

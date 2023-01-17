@@ -15,6 +15,8 @@ import 'package:gif_sticker/GIF_Pages/rose_gif_page.dart';
 import 'package:gif_sticker/Sticker_Pages/chritmas_page.dart';
 import 'package:gif_sticker/Sticker_Pages/new_year_page.dart';
 import 'package:gif_sticker/Sticker_Pages/santa_page.dart';
+import 'package:gif_sticker/gif_page.dart';
+import 'package:gif_sticker/sticker_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -31,47 +33,59 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(216, 148, 8, 57),
-        title: Text(
+        backgroundColor: const Color.fromARGB(216, 148, 8, 57),
+        title: const Text(
           "GIF Stickers",
           style: TextStyle(fontFamily: "Merriweather", fontSize: 16),
         ),
       ),
       body: Column(
-        children: [
+        children: <Widget>[
           Expanded(
             flex: 1,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
+              children: <Widget>[
                 Padding(
-                  padding: const EdgeInsets.only(left: 15, top: 15,bottom: 10,right: 15),
+                  padding: const EdgeInsets.only(
+                      left: 15, top: 15, bottom: 10, right: 15),
                   child: Row(
-                    mainAxisAlignment:MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      const Text(
                         "GIFs",
-                        style: TextStyle(fontSize: 20, fontFamily: "Merriweather"),
+                        style:
+                            TextStyle(fontSize: 20, fontFamily: "Merriweather"),
                       ),
-                      Text(
-                        "View all",
-                        style: TextStyle(decoration: TextDecoration.underline,fontSize: 13, fontFamily: "Merriweather",color:Color.fromARGB(216, 148, 8, 57) ),
+                      InkWell(
+                        onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: ((context) => const All_GIF_Page())));
+                        },
+                        child: const Text(
+                          "View all",
+                          style: TextStyle(
+                              decoration: TextDecoration.underline,
+                              fontSize: 13,
+                              fontFamily: "Merriweather",
+                              color: Color.fromARGB(216, 148, 8, 57)),
+                        ),
                       ),
                     ],
                   ),
                 ),
-               
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
+                    children: <Widget>[
                       SizedBox(width: devicewidth * 0.04),
                       gifcontainer(
                           context: context,
                           ontap: () {
                             Navigator.of(context).push(MaterialPageRoute(
-                                builder: ((context) => NewYear_GIF_Page())));
+                                builder: ((context) =>
+                                    const NewYear_GIF_Page())));
                           },
                           img: "assets/gif/new_year_gif/ng8.gif",
                           text: "New Year"),
@@ -80,7 +94,8 @@ class _HomePageState extends State<HomePage> {
                           context: context,
                           ontap: () {
                             Navigator.of(context).push(MaterialPageRoute(
-                                builder: ((context) => Birthday_GIF_Page())));
+                                builder: ((context) =>
+                                    const Birthday_GIF_Page())));
                           },
                           img: "assets/gif/birthday_gif/bg9.gif",
                           text: "Happy Birthday"),
@@ -89,7 +104,8 @@ class _HomePageState extends State<HomePage> {
                           context: context,
                           ontap: () {
                             Navigator.of(context).push(MaterialPageRoute(
-                                builder: ((context) => Greeting_GIF_Page())));
+                                builder: ((context) =>
+                                    const Greeting_GIF_Page())));
                           },
                           img: "assets/gif/greeting_gif/gg13.gif",
                           text: "Greetings"),
@@ -98,7 +114,8 @@ class _HomePageState extends State<HomePage> {
                           context: context,
                           ontap: () {
                             Navigator.of(context).push(MaterialPageRoute(
-                                builder: ((context) => Christmas_GIF_Page())));
+                                builder: ((context) =>
+                                    const Christmas_GIF_Page())));
                           },
                           img: "assets/gif/christmas_gif/mg8.gif",
                           text: "Marry Christmas"),
@@ -108,7 +125,7 @@ class _HomePageState extends State<HomePage> {
                           ontap: () {
                             Navigator.of(context).push(MaterialPageRoute(
                                 builder: ((context) =>
-                                    Love_Smiley_GIF_Page())));
+                                    const Love_Smiley_GIF_Page())));
                           },
                           img: "assets/gif/love_smiley_gif/sg11.gif",
                           text: "Love Smiley"),
@@ -117,7 +134,7 @@ class _HomePageState extends State<HomePage> {
                           context: context,
                           ontap: () {
                             Navigator.of(context).push(MaterialPageRoute(
-                                builder: ((context) => Love_GIF_Page())));
+                                builder: ((context) => const Love_GIF_Page())));
                           },
                           img: "assets/gif/love_gif/lg8.gif",
                           text: "Love Emoji"),
@@ -127,7 +144,7 @@ class _HomePageState extends State<HomePage> {
                           ontap: () {
                             Navigator.of(context).push(MaterialPageRoute(
                                 builder: ((context) =>
-                                    Cute_Classic_GIF_Page())));
+                                    const Cute_Classic_GIF_Page())));
                           },
                           img: "assets/gif/cute_gif/cg4.gif",
                           text: "Cute Emoji"),
@@ -136,7 +153,7 @@ class _HomePageState extends State<HomePage> {
                           context: context,
                           ontap: () {
                             Navigator.of(context).push(MaterialPageRoute(
-                                builder: ((context) => Kiss_GIF_Page())));
+                                builder: ((context) => const Kiss_GIF_Page())));
                           },
                           img: "assets/gif/kiss_gif/kg2.gif",
                           text: "Kiss Emoji"),
@@ -145,7 +162,8 @@ class _HomePageState extends State<HomePage> {
                           context: context,
                           ontap: () {
                             Navigator.of(context).push(MaterialPageRoute(
-                                builder: ((context) => Flower_GIF_Page())));
+                                builder: ((context) =>
+                                    const Flower_GIF_Page())));
                           },
                           img: "assets/gif/flower_gif/fg7.gif",
                           text: "Flowers"),
@@ -154,7 +172,7 @@ class _HomePageState extends State<HomePage> {
                           context: context,
                           ontap: () {
                             Navigator.of(context).push(MaterialPageRoute(
-                                builder: ((context) => Rose_GIF_Page())));
+                                builder: ((context) => const Rose_GIF_Page())));
                           },
                           img: "assets/gif/rose_gif/rlg10.gif",
                           text: "Rose Love"),
@@ -163,7 +181,8 @@ class _HomePageState extends State<HomePage> {
                           context: context,
                           ontap: () {
                             Navigator.of(context).push(MaterialPageRoute(
-                                builder: ((context) => Heart_GIF_Page())));
+                                builder: ((context) =>
+                                    const Heart_GIF_Page())));
                           },
                           img: "assets/gif/heart_gif/hg11.gif",
                           text: "Love Heart"),
@@ -172,7 +191,7 @@ class _HomePageState extends State<HomePage> {
                           context: context,
                           ontap: () {
                             Navigator.of(context).push(MaterialPageRoute(
-                                builder: ((context) => Hug_GIF_Page())));
+                                builder: ((context) => const Hug_GIF_Page())));
                           },
                           img: "assets/gif/hug_gif/hug.gif",
                           text: "Hug Bunny"),
@@ -181,7 +200,8 @@ class _HomePageState extends State<HomePage> {
                           context: context,
                           ontap: () {
                             Navigator.of(context).push(MaterialPageRoute(
-                                builder: ((context) => Couple_GIF_Page())));
+                                builder: ((context) =>
+                                    const Couple_GIF_Page())));
                           },
                           img: "assets/gif/couple_gif/crg2.gif",
                           text: "Couple"),
@@ -189,19 +209,30 @@ class _HomePageState extends State<HomePage> {
                     ],
                   ),
                 ),
-              
                 Padding(
-                  padding: const EdgeInsets.only(left: 15,top: 13,right: 15),
+                  padding: const EdgeInsets.only(left: 15, top: 13, right: 15),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
+                    children: <Widget>[
+                      const Text(
                         "Stickers",
-                        style: TextStyle(fontSize: 20, fontFamily: "Merriweather"),
+                        style:
+                            TextStyle(fontSize: 20, fontFamily: "Merriweather"),
                       ),
-                       Text(
-                        "View all",
-                        style: TextStyle(decoration: TextDecoration.underline,fontSize: 13, fontFamily: "Merriweather",color:Color.fromARGB(216, 148, 8, 57) ),
+                      InkWell(
+                        onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: ((context) =>
+                                  const All_Sticker_Page())));
+                        },
+                        child: const Text(
+                          "View all",
+                          style: TextStyle(
+                              decoration: TextDecoration.underline,
+                              fontSize: 13,
+                              fontFamily: "Merriweather",
+                              color: Color.fromARGB(216, 148, 8, 57)),
+                        ),
                       ),
                     ],
                   ),
@@ -216,14 +247,14 @@ class _HomePageState extends State<HomePage> {
                 padding: const EdgeInsets.only(left: 15, right: 15, bottom: 15),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
+                  children: <Widget>[
                     gridcontianer(
                         context: context,
                         height: deviceheight * 0.2,
                         width: devicewidth,
                         ontap: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                              builder: ((context) => NewYear_Page())));
+                              builder: ((context) => const NewYear_Page())));
                         },
                         img: "assets/sticker/new_year/ns1.jpg"),
                     SizedBox(height: deviceheight * 0.02),
@@ -233,7 +264,7 @@ class _HomePageState extends State<HomePage> {
                         width: devicewidth,
                         ontap: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                              builder: ((context) => Chritmas_Page())));
+                              builder: ((context) => const Chritmas_Page())));
                         },
                         img: "assets/sticker/christmas/ms3.jpg"),
                     SizedBox(height: deviceheight * 0.02),
@@ -243,7 +274,7 @@ class _HomePageState extends State<HomePage> {
                         width: devicewidth,
                         ontap: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                              builder: ((context) => Santa_Page())));
+                              builder: ((context) => const Santa_Page())));
                         },
                         img: "assets/sticker/santa/ss4.jpg"),
                   ],
@@ -269,37 +300,36 @@ Widget gifcontainer(
     child: Card(
       elevation: 2,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-      child: Container(
-          height: deviceheight * 0.26,
-          width: devicewidth * 0.35,
-          child: Column(
-            children: [
-              Container(
-                height: deviceheight * 0.16,
-                width: devicewidth * 0.35,
-                clipBehavior: Clip.antiAlias,
-                decoration:
-                    BoxDecoration(borderRadius: BorderRadius.circular(15)),
-                child: Image.asset(
-                  img ?? "",
-                  // "assets/gif/new_year_gif/ng.gif",
-                  fit: BoxFit.fill,
-                ),
+      child: SizedBox(
+        height: deviceheight * 0.26,
+        width: devicewidth * 0.35,
+        child: Column(
+          children: <Widget>[
+            Container(
+              height: deviceheight * 0.16,
+              width: devicewidth * 0.35,
+              clipBehavior: Clip.antiAlias,
+              decoration:
+                  BoxDecoration(borderRadius: BorderRadius.circular(15)),
+              child: Image.asset(
+                img ?? "",
+                fit: BoxFit.fill,
               ),
-              SizedBox(
-                height: deviceheight * 0.04,
+            ),
+            SizedBox(
+              height: deviceheight * 0.04,
+            ),
+            Text(
+              text ?? "",
+              style: const TextStyle(
+                fontSize: 15,
+                fontFamily: "Merriweather",
+                color: Color.fromARGB(216, 148, 8, 57),
               ),
-              Text(
-                text ?? "",
-                // "New Year",
-                style: TextStyle(
-                  fontSize: 15,
-                  fontFamily: "Merriweather",
-                  color: Color.fromARGB(216, 148, 8, 57),
-                ),
-              )
-            ],
-          )),
+            )
+          ],
+        ),
+      ),
     ),
   );
 }
