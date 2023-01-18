@@ -1,14 +1,16 @@
+// ignore_for_file: camel_case_types
+
 import 'package:flutter/material.dart';
 import 'package:gif_sticker/Sticker_Pages/new_year_page.dart';
 
-class Cute_Classic_GIF_Page extends StatefulWidget {
-  const Cute_Classic_GIF_Page({Key? key}) : super(key: key);
+class Birthday_Page extends StatefulWidget {
+  const Birthday_Page({Key? key}) : super(key: key);
 
   @override
-  State<Cute_Classic_GIF_Page> createState() => _Cute_Classic_GIF_PageState();
+  State<Birthday_Page> createState() => _Birthday_PageState();
 }
 
-class _Cute_Classic_GIF_PageState extends State<Cute_Classic_GIF_Page> {
+class _Birthday_PageState extends State<Birthday_Page> {
   @override
   Widget build(BuildContext context) {
     double deviceheight = MediaQuery.of(context).size.height;
@@ -17,11 +19,11 @@ class _Cute_Classic_GIF_PageState extends State<Cute_Classic_GIF_Page> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0.0,
-        title: Text(
-          "Cute and Classic Emojis",
+        title: const Text(
+          "Happy Birthday",
           style: TextStyle(color: Colors.black),
         ),
-        iconTheme: IconThemeData(color: Colors.black),
+        iconTheme: const IconThemeData(color: Colors.black),
         backgroundColor: Colors.white,
       ),
       body: Padding(
@@ -33,74 +35,61 @@ class _Cute_Classic_GIF_PageState extends State<Cute_Classic_GIF_Page> {
             mainAxisSpacing: 15,
             mainAxisExtent: deviceheight * 0.2,
           ),
-          children: [
+          children: <Widget>[
             gridcontianer(
                 context: context,
                 height: deviceheight * 0.2,
                 width: devicewidth * 0.2,
                 ontap: () {},
-                img: "assets/gif/cute_gif/cg.gif"),
+                img: "assets/sticker/birthday/bs.jpg"),
             gridcontianer(
                 context: context,
                 height: deviceheight * 0.2,
                 width: devicewidth * 0.2,
                 ontap: () {},
-                img: "assets/gif/cute_gif/cg1.gif"),
+                img: "assets/sticker/birthday/bs1.jpg"),
             gridcontianer(
                 context: context,
                 height: deviceheight * 0.2,
                 width: devicewidth * 0.2,
                 ontap: () {},
-                img: "assets/gif/cute_gif/cg2.gif"),
+                img: "assets/sticker/birthday/bs2.jpg"),
             gridcontianer(
                 context: context,
                 height: deviceheight * 0.2,
                 width: devicewidth * 0.2,
                 ontap: () {},
-                img: "assets/gif/cute_gif/cg4.gif"),
+                img: "assets/sticker/birthday/bs3.jpg"),
             gridcontianer(
                 context: context,
                 height: deviceheight * 0.2,
                 width: devicewidth * 0.2,
                 ontap: () {},
-                img: "assets/gif/cute_gif/cg5.gif"),
+                img: "assets/sticker/birthday/bs4.jpg"),
             gridcontianer(
                 context: context,
                 height: deviceheight * 0.2,
                 width: devicewidth * 0.2,
                 ontap: () {},
-                img: "assets/gif/cute_gif/cg6.gif"),
+                img: "assets/sticker/birthday/bs5.jpg"),
             gridcontianer(
                 context: context,
                 height: deviceheight * 0.2,
                 width: devicewidth * 0.2,
                 ontap: () {},
-                img: "assets/gif/cute_gif/cg7.gif"),
+                img: "assets/sticker/birthday/bs6.jpg"),
             gridcontianer(
                 context: context,
                 height: deviceheight * 0.2,
                 width: devicewidth * 0.2,
                 ontap: () {},
-                img: "assets/gif/cute_gif/cg8.gif"),
+                img: "assets/sticker/birthday/bs7.jpg"),
             gridcontianer(
                 context: context,
                 height: deviceheight * 0.2,
                 width: devicewidth * 0.2,
                 ontap: () {},
-                img: "assets/gif/cute_gif/cg9.gif"),
-            gridcontianer(
-                context: context,
-                height: deviceheight * 0.2,
-                width: devicewidth * 0.2,
-                ontap: () {},
-                img: "assets/gif/cute_gif/cg10.gif"),
-            gridcontianer(
-                context: context,
-                height: deviceheight * 0.2,
-                width: devicewidth * 0.2,
-                ontap: () {},
-                img: "assets/gif/cute_gif/cg11.gif"),
-           
+                img: "assets/sticker/birthday/bs8.jpg"),
           ],
         ),
       ),

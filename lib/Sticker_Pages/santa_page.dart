@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types
+
 import 'package:flutter/material.dart';
 import 'package:gif_sticker/Sticker_Pages/new_year_page.dart';
 
@@ -17,11 +19,11 @@ class _Santa_PageState extends State<Santa_Page> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0.0,
-        title: Text(
+        title: const Text(
           "Santa",
           style: TextStyle(color: Colors.black),
         ),
-        iconTheme: IconThemeData(color: Colors.black),
+        iconTheme: const IconThemeData(color: Colors.black),
         backgroundColor: Colors.white,
       ),
       body: Padding(
@@ -33,7 +35,7 @@ class _Santa_PageState extends State<Santa_Page> {
             mainAxisSpacing: 15,
             mainAxisExtent: deviceheight * 0.2,
           ),
-          children: [
+          children: <Widget>[
             gridcontianer(
                 context: context,
                 height: deviceheight * 0.2,
@@ -52,12 +54,6 @@ class _Santa_PageState extends State<Santa_Page> {
                 width: devicewidth * 0.2,
                 ontap: () {},
                 img: "assets/sticker/santa/ss3.jpg"),
-            // gridcontianer(
-            //     context: context,
-            //     height: deviceheight * 0.2,
-            //     width: devicewidth * 0.2,
-            //     ontap: () {},
-            //     img: "assets/santa/ss4.jpg"),
             gridcontianer(
                 context: context,
                 height: deviceheight * 0.2,

@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types
+
 import 'package:flutter/material.dart';
 import 'package:gif_sticker/Sticker_Pages/new_year_page.dart';
 
@@ -17,11 +19,11 @@ class _Chritmas_PageState extends State<Chritmas_Page> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0.0,
-        title: Text(
+        title: const Text(
           "Merry Chritmas",
           style: TextStyle(color: Colors.black),
         ),
-        iconTheme: IconThemeData(color: Colors.black),
+        iconTheme: const IconThemeData(color: Colors.black),
         backgroundColor: Colors.white,
       ),
       body: Padding(
@@ -33,7 +35,7 @@ class _Chritmas_PageState extends State<Chritmas_Page> {
             mainAxisSpacing: 15,
             mainAxisExtent: deviceheight * 0.2,
           ),
-          children: [
+          children: <Widget>[
             gridcontianer(
                 context: context,
                 height: deviceheight * 0.2,

@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types
+
 import 'package:flutter/material.dart';
 
 class NewYear_Page extends StatefulWidget {
@@ -16,11 +18,11 @@ class _NewYear_PageState extends State<NewYear_Page> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0.0,
-        title: Text(
+        title: const Text(
           "Happy New Year",
           style: TextStyle(color: Colors.black),
         ),
-        iconTheme: IconThemeData(color: Colors.black),
+        iconTheme: const IconThemeData(color: Colors.black),
         backgroundColor: Colors.white,
       ),
       body: Padding(
@@ -32,7 +34,7 @@ class _NewYear_PageState extends State<NewYear_Page> {
             mainAxisSpacing: 15,
             mainAxisExtent: deviceheight * 0.2,
           ),
-          children: [
+          children: <Widget>[
             gridcontianer(
                 context: context,
                 height: deviceheight * 0.2,

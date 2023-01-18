@@ -59,9 +59,23 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+  #Stickers
     - assets/sticker/new_year/
     - assets/sticker/christmas/
     - assets/sticker/santa/
+    - assets/sticker/birthday/
+    - assets/sticker/3D/
+    - assets/sticker/ginger_cat/
+    - assets/sticker/corgi_dog/
+    - assets/sticker/animal/
+    - assets/sticker/flower/
+    - assets/sticker/lovely_emoji/
+    - assets/sticker/rose/
+    - assets/sticker/cute/
+    - assets/sticker/lady/
+    - assets/sticker/couple/
+
+  #GIFs
     - assets/gif/new_year_gif/
     - assets/gif/birthday_gif/
     - assets/gif/greeting_gif/

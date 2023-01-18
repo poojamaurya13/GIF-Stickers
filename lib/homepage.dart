@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gif_sticker/GIF_Pages/birthday_gif_page.dart';
 import 'package:gif_sticker/GIF_Pages/christmas_gif_page.dart';
 import 'package:gif_sticker/GIF_Pages/couple_gif_page.dart';
-import 'package:gif_sticker/GIF_Pages/cute&classic_gif_page.dart';
+import 'package:gif_sticker/GIF_Pages/cute_gif_page.dart';
 import 'package:gif_sticker/GIF_Pages/flower_gif_page.dart';
 import 'package:gif_sticker/GIF_Pages/greeting_gif_page.dart';
 import 'package:gif_sticker/GIF_Pages/heart_gif_page.dart';
@@ -12,8 +12,19 @@ import 'package:gif_sticker/GIF_Pages/love_gif_page.dart';
 import 'package:gif_sticker/GIF_Pages/love_smiley_gif_page.dart';
 import 'package:gif_sticker/GIF_Pages/new_year_gif_page.dart';
 import 'package:gif_sticker/GIF_Pages/rose_gif_page.dart';
+import 'package:gif_sticker/Sticker_Pages/3d_emoji_page.dart';
+import 'package:gif_sticker/Sticker_Pages/animal_meme_page.dart';
+import 'package:gif_sticker/Sticker_Pages/birthday_page.dart';
 import 'package:gif_sticker/Sticker_Pages/chritmas_page.dart';
+import 'package:gif_sticker/Sticker_Pages/corgi_dog_page.dart';
+import 'package:gif_sticker/Sticker_Pages/couple_page.dart';
+import 'package:gif_sticker/Sticker_Pages/cute_classic_page.dart';
+import 'package:gif_sticker/Sticker_Pages/flower_page.dart';
+import 'package:gif_sticker/Sticker_Pages/ginger_cat_page.dart';
+import 'package:gif_sticker/Sticker_Pages/lady_emoji_page.dart';
+import 'package:gif_sticker/Sticker_Pages/lovely_emoji_page.dart';
 import 'package:gif_sticker/Sticker_Pages/new_year_page.dart';
+import 'package:gif_sticker/Sticker_Pages/rose_page.dart';
 import 'package:gif_sticker/Sticker_Pages/santa_page.dart';
 import 'package:gif_sticker/gif_page.dart';
 import 'package:gif_sticker/sticker_page.dart';
@@ -144,7 +155,7 @@ class _HomePageState extends State<HomePage> {
                           ontap: () {
                             Navigator.of(context).push(MaterialPageRoute(
                                 builder: ((context) =>
-                                    const Cute_Classic_GIF_Page())));
+                                    const Cute_GIF_Page())));
                           },
                           img: "assets/gif/cute_gif/cg4.gif",
                           text: "Cute Emoji"),
@@ -277,6 +288,116 @@ class _HomePageState extends State<HomePage> {
                               builder: ((context) => const Santa_Page())));
                         },
                         img: "assets/sticker/santa/ss4.jpg"),
+                    SizedBox(height: deviceheight * 0.02),
+                    gridcontianer(
+                        context: context,
+                        height: deviceheight * 0.2,
+                        width: devicewidth,
+                        ontap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: ((context) => const Birthday_Page())));
+                        },
+                        img: "assets/sticker/birthday/bs1.jpg"),
+                         SizedBox(height: deviceheight * 0.02),
+                    gridcontianer(
+                        context: context,
+                        height: deviceheight * 0.2,
+                        width: devicewidth,
+                        ontap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: ((context) => const Emoji_Page())));
+                        },
+                        img: "assets/sticker/3D/3ds10.jpg"),
+                         SizedBox(height: deviceheight * 0.02),
+                    gridcontianer(
+                        context: context,
+                        height: deviceheight * 0.2,
+                        width: devicewidth,
+                        ontap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: ((context) => const Ginger_Cat_Page())));
+                        },
+                        img: "assets/sticker/ginger_cat/gcs10.jpg"),
+                         SizedBox(height: deviceheight * 0.02),
+                    gridcontianer(
+                        context: context,
+                        height: deviceheight * 0.2,
+                        width: devicewidth,
+                        ontap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: ((context) => const Corgi_Dog_Page())));
+                        },
+                        img: "assets/sticker/corgi_dog/cds8.jpg"),
+                         SizedBox(height: deviceheight * 0.02),
+                    gridcontianer(
+                        context: context,
+                        height: deviceheight * 0.2,
+                        width: devicewidth,
+                        ontap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: ((context) => const Animal_Meme_Page())));
+                        },
+                        img: "assets/sticker/animal/as9.jpg"),
+                         SizedBox(height: deviceheight * 0.02),
+                    gridcontianer(
+                        context: context,
+                        height: deviceheight * 0.2,
+                        width: devicewidth,
+                        ontap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: ((context) => const Flower_Page())));
+                        },
+                        img: "assets/sticker/flower/fs10.jpg"),
+                         SizedBox(height: deviceheight * 0.02),
+                    gridcontianer(
+                        context: context,
+                        height: deviceheight * 0.2,
+                        width: devicewidth,
+                        ontap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: ((context) => const Lovely_Emoji_Page())));
+                        },
+                        img: "assets/sticker/lovely_emoji/ls12.jpg"),
+                         SizedBox(height: deviceheight * 0.02),
+                    gridcontianer(
+                        context: context,
+                        height: deviceheight * 0.2,
+                        width: devicewidth,
+                        ontap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: ((context) => const Rose_Page())));
+                        },
+                        img: "assets/sticker/rose/rs9.jpg"),
+                         SizedBox(height: deviceheight * 0.02),
+                    gridcontianer(
+                        context: context,
+                        height: deviceheight * 0.2,
+                        width: devicewidth,
+                        ontap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: ((context) => const Cute_Classic_Page())));
+                        },
+                        img: "assets/sticker/cute/cs10.jpg"),
+                         SizedBox(height: deviceheight * 0.02),
+                    gridcontianer(
+                        context: context,
+                        height: deviceheight * 0.2,
+                        width: devicewidth,
+                        ontap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: ((context) => const Lady_Emoji_Page())));
+                        },
+                        img: "assets/sticker/lady/les12.jpg"),
+                         SizedBox(height: deviceheight * 0.02),
+                    gridcontianer(
+                        context: context,
+                        height: deviceheight * 0.2,
+                        width: devicewidth,
+                        ontap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: ((context) => const Couple_Page())));
+                        },
+                        img: "assets/sticker/couple/crs4.jpg"),
                   ],
                 ),
               ),
