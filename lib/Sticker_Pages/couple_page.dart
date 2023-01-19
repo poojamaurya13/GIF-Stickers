@@ -60,6 +60,18 @@ class _Couple_PageState extends State<Couple_Page> {
                 width: devicewidth * 0.2,
                 ontap: () {},
                 img: "assets/sticker/couple/crs3.jpg"),
+            gridcontianer(
+                context: context,
+                height: deviceheight * 0.2,
+                width: devicewidth * 0.2,
+                ontap: () {},
+                img: "assets/sticker/couple/crs5.jpg"),
+            gridcontianer(
+                context: context,
+                height: deviceheight * 0.2,
+                width: devicewidth * 0.2,
+                ontap: () {},
+                img: "assets/sticker/couple/crs6.jpg"),
            
           ],
         ),

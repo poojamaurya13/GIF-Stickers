@@ -74,6 +74,7 @@ flutter:
     - assets/sticker/cute/
     - assets/sticker/lady/
     - assets/sticker/couple/
+    - assets/sticker/text/
 
   #GIFs
     - assets/gif/new_year_gif/

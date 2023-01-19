@@ -26,6 +26,7 @@ import 'package:gif_sticker/Sticker_Pages/lovely_emoji_page.dart';
 import 'package:gif_sticker/Sticker_Pages/new_year_page.dart';
 import 'package:gif_sticker/Sticker_Pages/rose_page.dart';
 import 'package:gif_sticker/Sticker_Pages/santa_page.dart';
+import 'package:gif_sticker/Sticker_Pages/text_emoji_page.dart';
 import 'package:gif_sticker/gif_page.dart';
 import 'package:gif_sticker/sticker_page.dart';
 
@@ -398,6 +399,16 @@ class _HomePageState extends State<HomePage> {
                               builder: ((context) => const Couple_Page())));
                         },
                         img: "assets/sticker/couple/crs4.jpg"),
+                         SizedBox(height: deviceheight * 0.02),
+                    gridcontianer(
+                        context: context,
+                        height: deviceheight * 0.2,
+                        width: devicewidth,
+                        ontap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: ((context) => const Text_Emoji_Page())));
+                        },
+                        img: "assets/sticker/text/tes13.jpg"),
                   ],
                 ),
               ),
