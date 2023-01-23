@@ -24,39 +24,72 @@ class _All_Sticker_PageState extends State<All_Sticker_Page> {
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: Stack(
-          children: [
-            Container(
-              height: deviceheight * 0.1,
-              width: devicewidth,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8),
-                  color: Color.fromARGB(255, 204, 204, 204)),
-              child: Padding(
-                padding: const EdgeInsets.only(right: 20),
-                child: Align(
-                  alignment: Alignment.centerRight,
-                  child: Text("See all"),
+        child: Container(
+          height: deviceheight * 0.12,
+          width: devicewidth,
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(8),
+              color: Color.fromARGB(255, 220, 220, 220)),
+          // child: Padding(
+          //   padding: const EdgeInsets.only(right: 20),
+          //   child: Align(
+          //     alignment: Alignment.centerRight,
+          //     child: Text("See all"),
+          //   ),
+          // ),
+
+          child: Row(
+            children: [
+              Container(
+                height: deviceheight * 0.12,
+                width: devicewidth * 0.70,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(8),
+                    color: Color.fromARGB(216, 148, 8, 57)),
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 5),
+                  child: Row(
+                    children: [
+                      Container(
+                        width: devicewidth * 0.2,
+                        clipBehavior: Clip.antiAlias,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8)),
+                        child: Image.asset(
+                          "assets/sticker/new_year/ns1.jpg",
+                        ),
+                      ),
+                      SizedBox(
+                        width: devicewidth * 0.05,
+                      ),
+                      Text(
+                        "Happy New Year",
+                        style: const TextStyle(
+                            fontSize: 15,
+                            fontFamily: "Merriweather",
+                            color: Colors.white),
+                      ),
+                    ],
+                  ),
                 ),
               ),
-            ),
-            Container(
-              height: deviceheight * 0.1,
-              width: devicewidth * 0.65,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8),
-                  color: Color.fromARGB(216, 148, 8, 57)),
-              child: Center(
-                child: Text(
-                  "Happy New Year",
+              Container(
+                height: deviceheight * 0.12,
+                width: devicewidth * 0.25,
+                // decoration: BoxDecoration(
+                //     borderRadius: BorderRadius.circular(8),
+                //     color: Color.fromARGB(216, 148, 8, 57)),
+                child: Center(
+                    child: Text(
+                  "See all",
                   style: const TextStyle(
-                      fontSize: 15,
-                      fontFamily: "Merriweather",
-                      color: Colors.white),
-                ),
+                      decoration: TextDecoration.underline,
+                      fontSize: 13,
+                      fontFamily: "Merriweather"),
+                )),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
